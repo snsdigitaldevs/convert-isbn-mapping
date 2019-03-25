@@ -1,0 +1,23 @@
+{
+  "name": "convert-isbn-mapping",
+  "version": "1.0.0",
+  "description": "convert excel-format isbn mapping to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snsdigitaldevs/convert-isbn-mapping.git"
+  },
+  "author": "Pimsleur Devs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snsdigitaldevs/convert-isbn-mapping/issues"
+  },
+  "homepage": "https://github.com/snsdigitaldevs/convert-isbn-mapping#readme",
+  "dependencies": {
+    "convert-excel-to-json": "^1.6.1",
+    "fs": "0.0.1-security"
+  }
+}
