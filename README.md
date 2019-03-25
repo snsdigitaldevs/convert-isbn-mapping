@@ -14,4 +14,4 @@ please run `node convert-isbn-mapping.js` you can get `purchase-mapping.json` an
 ## How to use the result
 After get the json result, please verify that the json length is the same as expected.
 
-Copy the `purchase-mapping.json` and `format-mapping.json` under location `resources/isbn-mapping` into [UnlimitedBackend](https://github.com/snsdigitaldevs/UnlimitedBackend) code repository. 
+Copy `purchase-mapping.json` and `format-mapping.json`, paste them under location `resources/isbn-mapping` into [UnlimitedBackend](https://github.com/snsdigitaldevs/UnlimitedBackend) code repository. 
