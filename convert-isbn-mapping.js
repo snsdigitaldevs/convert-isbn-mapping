@@ -14,10 +14,13 @@ const result = excelToJson({
             C: 'Course name',
             D: 'Upsell in-app purchase ISBN',
             E: 'Upsell course name',
-            F: 'Upsell2 in-app purchase ISBN',
-            G: 'Upsell2 course name',
-            H: 'Upgrade in-app purchase ISBN',
-            I: 'Upgrade course name'
+            G: 'Upsell web app add-to-cart',
+            H: 'Upsell2 in-app purchase ISBN',
+            I: 'Upsell2 course name',
+            K: 'Upsell2 web app add-to-cart',
+            L: 'Upgrade in-app purchase ISBN',
+            M: 'Upgrade course name',
+            O: 'Upgrade web app add-to-cart',
         }
     },{
         name: 'Format map',
@@ -56,17 +59,26 @@ result["Purchase map"].forEach(item => {
     if(!item['Upsell course name']){
         item['Upsell course name'] = ''
     }
+    if(!item['Upsell web app add-to-cart']){
+        item['Upsell web app add-to-cart'] = ''
+    }
     if(!item['Upsell2 in-app purchase ISBN']){
         item['Upsell2 in-app purchase ISBN'] = ''
     }
     if(!item['Upsell2 course name']){
         item['Upsell2 course name'] = ''
     }
+    if(!item['Upsell2 web app add-to-cart']){
+        item['Upsell2 web app add-to-cart'] = ''
+    }
     if(!item['Upgrade in-app purchase ISBN']){
         item['Upgrade in-app purchase ISBN'] = ''
     }
     if(!item['Upgrade course name']){
         item['Upgrade course name'] = ''
+    }
+    if(!item['Upgrade web app add-to-cart']){
+        item['Upgrade web app add-to-cart'] = ''
     }
     purchase_map_output.push(item);
 })
