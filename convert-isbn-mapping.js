@@ -2,7 +2,7 @@ const excelToJson = require('convert-excel-to-json');
 const fs = require('fs');
  
 const result = excelToJson({
-    sourceFile: 'isbn-mapping-latest.xlsx',
+    sourceFile: 'In App purchase ISBN mapping.xlsx',
     sheets:[{
         name: 'Purchase map',
         header:{
