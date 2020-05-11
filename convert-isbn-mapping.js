@@ -18,9 +18,12 @@ const result = excelToJson({
             H: 'Upsell2 in-app purchase ISBN',
             I: 'Upsell2 course name',
             K: 'Upsell2 web app add-to-cart',
-            L: 'Upgrade in-app purchase ISBN',
-            M: 'Upgrade course name',
-            O: 'Upgrade web app add-to-cart',
+            L: 'Upsell2 web app add-to-cart CANADA',
+            M: 'Upsell2 web app add-to-cart UK',
+            N: 'Upsell2 web app add-to-cart AUSTRALIA',
+            O: 'Upgrade in-app purchase ISBN',
+            P: 'Upgrade course name',
+            R: 'Upgrade web app add-to-cart'
         }
     },{
         name: 'Format map',
@@ -70,6 +73,15 @@ result["Purchase map"].forEach(item => {
     }
     if(!item['Upsell2 web app add-to-cart']){
         item['Upsell2 web app add-to-cart'] = ''
+    }
+    if(!item['Upsell2 web app add-to-cart CANADA']){
+        item['Upsell2 web app add-to-cart CANADA'] = ''
+    }
+    if(!item['Upsell2 web app add-to-cart UK']){
+        item['Upsell2 web app add-to-cart UK'] = ''
+    }
+    if(!item['Upsell2 web app add-to-cart AUSTRALIA']){
+        item['Upsell2 web app add-to-cart AUSTRALIA'] = ''
     }
     if(!item['Upgrade in-app purchase ISBN']){
         item['Upgrade in-app purchase ISBN'] = ''
