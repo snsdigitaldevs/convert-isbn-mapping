@@ -103,17 +103,15 @@ console.log('format_map_output length', format_map_output.length);
 purchase_map_output.forEach((item) => {
   let isbn = item['ISBN'];
   let searchItem = format_map_output.find((search) => search['ISBN'] == isbn);
-  if (searchItem) {
-    item['Other format 1 (Upsell) ISBN'] =
-      searchItem['Other format 1 (Upsell) ISBN'];
-    item['Other format 2 (Upgrade) ISBN'] =
-      searchItem['Other format 2 (Upgrade) ISBN'];
-    item['Other format 3 (DVD) ISBN'] = searchItem['Other format 3 (DVD) ISBN'];
-  } else {
-    item['Other format 1 (Upsell) ISBN'] = '';
-    item['Other format 2 (Upgrade) ISBN'] = '';
-    item['Other format 3 (DVD) ISBN'] = '';
-  }
+  item['Other format 1 (Upsell) ISBN'] = searchItem
+    ? searchItem['Other format 1 (Upsell) ISBN']
+    : '';
+  item['Other format 2 (Upgrade) ISBN'] = searchItem
+    ? searchItem['Other format 2 (Upgrade) ISBN']
+    : '';
+  item['Other format 3 (DVD) ISBN'] = searchItem
+    ? searchItem['Other format 3 (DVD) ISBN']
+    : '';
 });
 
 var purchase_mapping_json = JSON.stringify(purchase_map_output);
