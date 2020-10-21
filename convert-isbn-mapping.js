@@ -114,13 +114,13 @@ purchase_map_output.forEach((item) => {
     : '';
 });
 
-var purchase_mapping_json = JSON.stringify(purchase_map_output);
+var purchase_mapping_json = JSON.stringify(purchase_map_output, null, 4);
 fs.writeFile('purchase-mapping.json', purchase_mapping_json, function (err) {
   if (err) throw err;
   console.log('convert purchase-mapping complete');
 });
 
-var format_mapping_json = JSON.stringify(format_map_output);
+var format_mapping_json = JSON.stringify(format_map_output, null, 4);
 fs.writeFile('format-mapping.json', format_mapping_json, function (err) {
   if (err) throw err;
   console.log('convert format-mapping complete');
